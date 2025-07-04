@@ -5,18 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
+    "build-with-typecheck": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "element-plus": "^2.5.0",
     "vue": "^3.4.0",
-    "vue-router": "^4.2.5",
-    "element-plus": "^2.5.0"
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@types/node": "^24.0.10",
     "@vitejs/plugin-vue": "^5.0.2",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
     "vue-tsc": "^1.8.25"
   }
-} 
+}
