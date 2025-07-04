@@ -590,16 +590,13 @@ compareSchemes()
 .input-unit {
   position: absolute;
   right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   color: #7f8c8d;
   font-size: 0.9rem;
   font-weight: 500;
   pointer-events: none;
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-  padding: 2px 8px;
-  border-radius: 6px;
-  border: 1px solid rgba(33, 150, 243, 0.2);
-  top: 50%;
-  transform: translateY(-50%);
+  z-index: 1;
 }
 
 :deep(.modern-input) {
@@ -613,6 +610,9 @@ compareSchemes()
   padding: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  width: 100%;
+  height: auto;
+  min-height: 48px;
 }
 
 :deep(.modern-input .el-input__wrapper:hover) {
@@ -628,13 +628,14 @@ compareSchemes()
 :deep(.modern-input .el-input__inner) {
   border: none;
   border-radius: 12px;
-  padding: 12px 60px 12px 16px;
+  padding: 12px 70px 12px 16px;
   font-size: 0.95rem;
   font-weight: 500;
   color: #2c3e50;
   background: transparent;
   box-shadow: none;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 :deep(.modern-input .el-input__inner:focus) {
